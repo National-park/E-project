@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+        <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">      
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <link rel="stylesheet" href="assets/css/main.css"> 
+    </head>
+
+    <body>
+        <header id="header" class="header d-flex align-items-center sticky-top">
+            <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    
+                <a href="index.html" class="logo d-flex align-items-center me-auto">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="assets/img/logo.png" alt=""> -->
+                    <h1 class="sitename">NATIONAL PARKS</h1>
+                </a>
+    
+                <nav id="navmenu" class="navmenu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="National-park.html">
+                                Destinantions
+                            </a>
+    
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="wildlife.html">
+                                Wildlife
+                            </a>
+    
+                        </li>
+    
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="downloadable.html">Guide</a></li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+    
+                <a class="btn-getstarted" href="about.html">Get Started</a>
+    
+            </div>
+        </header>
+            <!-- Hero Section -->
+            <section class="sec-1 col-12">
+              <video autoplay muted loop class="background-video">
+                  <source src="/assets/img/4K African Wildlife - African Nature Showreel 2017 by Robert Hofmeyr.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+              <div class="container-fluid">
+                  <h1>WildLife</h1>
+                  <p id="animated-text" class="text-light">
+                      Our national parks host millions of people a year, sustain countless species,<br>
+                      and safeguard some of the most breathtaking landscapes on the planet.<br>
+                      They preserve natural and cultural resources “for the enjoyment, education,<br>
+                      and inspiration of this and future generations.” Here's how to make the most<br>
+                      of your next national parks trip.
+                  </p>
+              </div>
+              </section>
+              <main>
+                <section class="col-12 mt-5 container">
+                    <div>
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-3 gap-md-5 ms-3 ms-md-5 gallery-list me-3 me-md-5">
+                            <li>Gallery</li>
+                            <li data-library="all">All</li>
+                            <li data-library="Animals">Animals</li>
+                            <li data-library="Birds">Birds</li>
+                            <li data-library="Marine">Marine</li>
+                            <li data-library="Insects">Insects</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="all" class="wildlife-section container">
+                
+                  <div class="grid-container">
+                      
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/American_bison" target="_blank">
+                            <img src="assets/img/slider animals/abison.avif" alt="American Bison">
+                            <p>
+                                <strong>American Bison</strong><br>
+                                <span>The American bison is a symbol of the American West and is known for its massive size and shaggy coat.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Asian_elephant" target="_blank">
+                            <img src="assets/img/slider animals/elephamt.avif" alt="Asiatic Elephant">
+                            <p>
+                                <strong>Asiatic Elephant</strong><br>
+                                <span>Asiatic elephants are smaller than their African relatives and are known for their intelligence and social behavior.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Bald_eagle" target="_blank">
+                            <img src="assets/img/slider animals/beagle.avif" alt="Bald Eagle">
+                            <p>
+                                <strong>Bald Eagle</strong><br>
+                                <span>The bald eagle is a bird of prey found in North America, recognized for its white head and tail.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Black_bear" target="_blank">
+                            <img src="assets/img/slider animals/bbears.avif" alt="Black Bear">
+                            <p>
+                                <strong>Black Bear</strong><br>
+                                <span>Black bears are adaptable and can be found in forests, mountains, and even urban areas across North America.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Black_stork" target="_blank">
+                            <img src="assets/img/slider animals/stork.avif" alt="Black Stork">
+                            <p>
+                                <strong>Black Stork</strong><br>
+                                <span>The black stork is a migratory bird known for its striking black and white plumage and long legs.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Wild_boar" target="_blank">
+                            <img src="assets/img/slider animals/boar.avif" alt="Wild Boar">
+                            <p>
+                                <strong>Wild Boar</strong><br>
+                                <span>Wild boars are known for their tusks and are found in forests and grasslands across Europe and Asia.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Marine">
+                        <a href="https://en.wikipedia.org/wiki/Catfish" target="_blank">
+                            <img src="assets/img/slider animals/catfish.avif" alt="Catfish">
+                            <p>
+                                <strong>Catfish</strong><br>
+                                <span>Catfish are known for their whisker-like barbels and are found in freshwater and saltwater environments.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Chameleon" target="_blank">
+                            <img src="assets/img/slider animals/chameleon.avif" alt="Chameleon">
+                            <p>
+                                <strong>Chameleon</strong><br>
+                                <span>Chameleons are famous for their ability to change color and their unique, independently moving eyes.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Cobra" target="_blank">
+                            <img src="assets/img/slider animals/cobra.avif" alt="Cobra">
+                            <p>
+                                <strong>Cobra</strong><br>
+                                <span>Cobras are venomous snakes known for their hood and are found in Africa and Asia.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Crocodile" target="_blank">
+                            <img src="assets/img/slider animals/crocodile.avif" alt="Crocodile">
+                            <p>
+                                <strong>Crocodile</strong><br>
+                                <span>Crocodiles are large reptiles found in tropical regions, known for their powerful jaws and stealthy hunting.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Deer" target="_blank">
+                            <img src="assets/img/slider animals/deer.avif" alt="Deer">
+                            <p>
+                                <strong>Deer</strong><br>
+                                <span>Deer are graceful animals known for their antlers and are found in various habitats worldwide.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Insects">
+                        <a href="https://en.wikipedia.org/wiki/Dragonfly" target="_blank">
+                            <img src="assets/img/slider animals/dragonfly.avif" alt="Dragonfly">
+                            <p>
+                                <strong>Dragonfly</strong><br>
+                                <span>Dragonflies are agile insects known for their large eyes and ability to hover in mid-air.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Marine">
+                        <a href="https://en.wikipedia.org/wiki/Eel" target="_blank">
+                            <img src="assets/img/slider animals/eel.avif" alt="Eel">
+                            <p>
+                                <strong>Eel</strong><br>
+                                <span>Eels are elongated fish known for their slippery bodies and are found in both freshwater and saltwater.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/European_brown_bear" target="_blank">
+                            <img src="assets/img/slider animals/ebrbear.avif" alt="European Brown Bear">
+                            <p>
+                                <strong>European Brown Bear</strong><br>
+                                <span>European brown bears are large mammals known for their strength and are found in forests across Europe.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Falcon" target="_blank">
+                            <img src="assets/img/slider animals/Falcon.avif" alt="Falcon">
+                            <p>
+                                <strong>Falcon</strong><br>
+                                <span>Falcons are birds of prey known for their speed and keen eyesight, often used in falconry.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Insects">
+                        <a href="https://en.wikipedia.org/wiki/Firefly" target="_blank">
+                            <img src="assets/img/slider animals/fireflies.avif" alt="Fireflies">
+                            <p>
+                                <strong>Fireflies</strong><br>
+                                <span>Fireflies are bioluminescent insects known for their glowing abdomens, often seen in summer evenings.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Flamingo" target="_blank">
+                            <img src="assets/img/slider animals/flamingo.avif" alt="Flamingo">
+                            <p>
+                                <strong>Flamingo</strong><br>
+                                <span>Flamingos are wading birds known for their pink feathers and long legs, often found in shallow waters.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Garter_snake" target="_blank">
+                            <img src="assets/img/slider animals/gsnake.avif" alt="Garter Snake">
+                            <p>
+                                <strong>Garter Snake</strong><br>
+                                <span>Garter snakes are common non-venomous snakes found in North America, known for their distinctive stripes.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Golden_eagle" target="_blank">
+                            <img src="assets/img/slider animals/geagle.avif" alt="Golden Eagle">
+                            <p>
+                                <strong>Golden Eagle</strong><br>
+                                <span>The golden eagle is a large bird of prey known for its powerful build and impressive hunting skills.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Marine">
+                        <a href="https://en.wikipedia.org/wiki/Gourami" target="_blank">
+                            <img src="assets/img/slider animals/gourami.avif" alt="Gourami">
+                            <p>
+                                <strong>Gourami</strong><br>
+                                <span>Gouramis are freshwater fish known for their vibrant colors and labyrinth organ, allowing them to breathe air.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Gray_wolf" target="_blank">
+                            <img src="assets/img/slider animals/gwolf.avif" alt="Gray Wolf">
+                            <p>
+                                <strong>Gray Wolf</strong><br>
+                                <span>Gray wolves are social animals known for their pack behavior and are found in various habitats across the world.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Great_hornbill" target="_blank">
+                            <img src="assets/img/slider animals/ghbill.avif" alt="Great Hornbill">
+                            <p>
+                                <strong>Great Hornbill</strong><br>
+                                <span>The great hornbill is a large bird known for its distinctive casque and vibrant plumage.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Green_lizard" target="_blank">
+                            <img src="assets/img/slider animals/glizard.avif" alt="Green Lizard">
+                            <p>
+                                <strong>Green Lizard</strong><br>
+                                <span>Green lizards are known for their bright green color and are often found in warm, sunny environments.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Grizzly_bear" target="_blank">
+                            <img src="assets/img/slider animals/gbear.avif" alt="Grizzly Bear">
+                            <p>
+                                <strong>Grizzly Bear</strong><br>
+                                <span>Grizzly bears are large mammals known for their strength and are found in North America.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Insects">
+                        <a href="https://en.wikipedia.org/wiki/Honey_bee" target="_blank">
+                            <img src="assets/img/slider animals/hbee.avif" alt="Honey Bee">
+                            <p>
+                                <strong>Honey Bee</strong><br>
+                                <span>Honey bees are essential pollinators known for their role in producing honey and beeswax.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Jackal" target="_blank">
+                            <img src="assets/img/slider animals/jackal.avif" alt="Jackal">
+                            <p>
+                                <strong>Jackal</strong><br>
+                                <span>Jackals are opportunistic feeders known for their adaptability and are found in Africa and Asia.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Leopard_cat" target="_blank">
+                            <img src="assets/img/slider animals/leopard.avif" alt="Leopard Cat">
+                            <p>
+                                <strong>Leopard Cat</strong><br>
+                                <span>Leopard cats are small wild cats known for their spotted coats and are found in Asia.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Komodo_dragon" target="_blank">
+                            <img src="assets/img/slider animals/kdragon.avif" alt="Komodo Dragon">
+                            <p>
+                                <strong>Komodo Dragon</strong><br>
+                                <span>Komodo dragons are the largest lizards in the world, known for their size and venomous bite.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Marine">
+                        <a href="https://en.wikipedia.org/wiki/Mahseer" target="_blank">
+                            <img src="assets/img/slider animals/mahaseer.avif" alt="Mahaseer">
+                            <p>
+                                <strong>Mahaseer</strong><br>
+                                <span>Mahaseer are freshwater fish known for their size and are popular among anglers in South Asia.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Insects">
+                        <a href="https://en.wikipedia.org/wiki/Monarch_butterfly" target="_blank">
+                            <img src="assets/img/slider animals/butterfly.avif" alt="Monarch Butterfly">
+                            <p>
+                                <strong>Monarch Butterfly</strong><br>
+                                <span>Monarch butterflies are known for their long migrations and striking orange and black wings.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Marine">
+                        <a href="https://en.wikipedia.org/wiki/Otter" target="_blank">
+                            <img src="assets/img/slider animals/otter.avif" alt="Otter">
+                            <p>
+                                <strong>Otter</strong><br>
+                                <span>Otters are playful aquatic mammals known for their agility in water and social behavior.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Owl" target="_blank">
+                            <img src="assets/img/slider animals/owl.avif" alt="Owl">
+                            <p>
+                                <strong>Owl</strong><br>
+                                <span>Owls are nocturnal birds of prey known for their distinctive calls and silent flight.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Pangolin" target="_blank">
+                            <img src="assets/img/slider animals/pangolin.avif" alt="Indian Pangolin">
+                            <p>
+                                <strong>Indian Pangolin</strong><br>
+                                <span>Pangolins are unique mammals known for their protective keratin scales and are often called "scaly anteaters."</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Parakeet" target="_blank">
+                            <img src="assets/img/slider animals/parakeet.avif" alt="Parakeet">
+                            <p>
+                                <strong>Parakeet</strong><br>
+                                <span>Parakeets are small, colorful birds known for their playful nature and ability to mimic sounds.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Peafowl" target="_blank">
+                            <img src="assets/img/slider animals/peacock.avif" alt="Peacock">
+                            <p>
+                                <strong>Peacock</strong><br>
+                                <span>Peacocks are known for their vibrant plumage and elaborate courtship displays.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Penguin" target="_blank">
+                            <img src="assets/img/slider animals/penguin.avif" alt="Penguin">
+                            <p>
+                                <strong>Penguin</strong><br>
+                                <span>Penguins are flightless birds known for their distinctive tuxedo-like appearance and swimming ability.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Pheasant" target="_blank">
+                            <img src="assets/img/slider animals/Pheasant.avif" alt="Pheasant">
+                            <p>
+                                <strong>Pheasant</strong><br>
+                                <span>Pheasants are colorful birds known for their long tails and are often found in grasslands and forests.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Python" target="_blank">
+                            <img src="assets/img/slider animals/python.avif" alt="Python">
+                            <p>
+                                <strong>Python</strong><br>
+                                <span>Pythons are large non-venomous snakes known for their constricting method of hunting.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Rat_snake" target="_blank">
+                            <img src="assets/img/slider animals/rsnake.avif" alt="Rat Snake">
+                            <p>
+                                <strong>Rat Snake</strong><br>
+                                <span>Rat snakes are non-venomous constrictors known for their ability to control rodent populations.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Red_fox" target="_blank">
+                            <img src="assets/img/slider animals/fox.avif" alt="Red Fox">
+                            <p>
+                                <strong>Red Fox</strong><br>
+                                <span>Red foxes are known for their cunning nature and adaptability to various environments.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Marine">
+                        <a href="https://en.wikipedia.org/wiki/River_dolphin" target="_blank">
+                            <img src="assets/img/slider animals/dolphin.avif" alt="River Dolphin">
+                            <p>
+                                <strong>River Dolphin</strong><br>
+                                <span>River dolphins are freshwater dolphins known for their unique appearance and social behavior.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Royal_Bengal_tiger" target="_blank">
+                            <img src="assets/img/slider animals/btiger.avif" alt="Royal Bengal Tiger">
+                            <p>
+                                <strong>Royal Bengal Tiger</strong><br>
+                                <span>The Royal Bengal tiger is a majestic big cat known for its strength and beautiful striped coat.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Rubber_boa" target="_blank">
+                            <img src="assets/img/slider animals/rboa.avif" alt="Rubber Boa">
+                            <p>
+                                <strong>Rubber Boa</strong><br>
+                                <span>Rubber boas are small, non-venomous snakes known for their smooth, rubbery skin.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Scarlet_minivet" target="_blank">
+                            <img src="assets/img/slider animals/scarlet.avif" alt="Scarlet Minivet">
+                            <p>
+                                <strong>Scarlet Minivet</strong><br>
+                                <span>The scarlet minivet is a small bird known for its striking red and black plumage.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Insects">
+                        <a href="https://en.wikipedia.org/wiki/Scorpion" target="_blank">
+                            <img src="assets/img/slider animals/scorpion.avif" alt="Scorpion">
+                            <p>
+                                <strong>Scorpion</strong><br>
+                                <span>Scorpions are arachnids known for their venomous sting and are found in various habitats worldwide.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Snow_leopard" target="_blank">
+                            <img src="assets/img/slider animals/sleopard.avif" alt="Snow Leopard">
+                            <p>
+                                <strong>Snow Leopard</strong><br>
+                                <span>Snow leopards are elusive big cats known for their beautiful spotted coats and adaptability to cold climates.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Snub-nosed_monkey" target="_blank">
+                            <img src="assets/img/slider animals/monkey.avif" alt="Snub-Nosed Monkey">
+                            <p>
+                                <strong>Snub-Nosed Monkey</strong><br>
+                                <span>Snub-nosed monkeys are known for their distinctive flat noses and are found in the mountains of Asia.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Tortoise" target="_blank">
+                            <img src="assets/img/slider animals/tortoise.avif" alt="Tortoise">
+                            <p>
+                                <strong>Tortoise</strong><br>
+                                <span>Tortoises are land-dwelling reptiles known for their hard shells and long lifespans.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Tragopan" target="_blank">
+                            <img src="assets/img/slider animals/tragopan.avif" alt="Tragopan">
+                            <p>
+                                <strong>Tragopan</strong><br>
+                                <span>Tragopans are colorful pheasants known for their elaborate courtship displays and beautiful plumage.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Tree_frog" target="_blank">
+                            <img src="assets/img/slider animals/tfrog.avif" alt="Tree Frog">
+                            <p>
+                                <strong>Tree Frog</strong><br>
+                                <span>Tree frogs are known for their ability to climb and are often found in tropical and temperate regions.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Turtle" target="_blank">
+                            <img src="assets/img/slider animals/turtle.avif" alt="Turtle">
+                            <p>
+                                <strong>Turtle</strong><br>
+                                <span>Turtles are reptiles known for their protective shells and can be found in both land and aquatic environments.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Vulture" target="_blank">
+                            <img src="assets/img/slider animals/vulture.avif" alt="Vulture">
+                            <p>
+                                <strong>Vulture</strong><br>
+                                <span>Vultures are scavenging birds known for their bald heads and role in the ecosystem as nature's cleanup crew.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Water_dragon" target="_blank">
+                            <img src="assets/img/slider animals/wdragon.avif" alt="Water Dragon">
+                            <p>
+                                <strong>Water Dragon</strong><br>
+                                <span>Water dragons are lizards known for their ability to swim and are often found near water sources.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Birds">
+                        <a href="https://en.wikipedia.org/wiki/Woodpecker" target="_blank">
+                            <img src="assets/img/slider animals/woodpecker.avif" alt="Woodpecker">
+                            <p>
+                                <strong>Woodpecker</strong><br>
+                                <span>Woodpeckers are known for their pecking behavior and are often found in forests, creating nesting holes in trees.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Hippopotamus" target="_blank">
+                            <img src="assets/img/slider animals/hippo.avif" alt="Hippopotamus">
+                            <p>
+                                <strong>Hippopotamus</strong><br>
+                                <span>Hippopotamuses are large, mostly herbivorous mammals known for their massive size and semi-aquatic lifestyle.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Rhinoceros" target="_blank">
+                            <img src="assets/img/slider animals/rhino.avif" alt="Rhinoceros">
+                            <p>
+                                <strong>Rhinoceros</strong><br>
+                                <span>Rhinoceroses are large, thick-skinned herbivores known for their horns and are found in Africa and Asia.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Lion" target="_blank">
+                            <img src="assets/img/slider animals/lion.avif" alt="Lion">
+                            <p>
+                                <strong>Lion</strong><br>
+                                <span>Lions are known as the "king of the jungle" and are social animals that live in prides.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Zebra" target="_blank">
+                            <img src="assets/img/slider animals/zebra.avif" alt="Zebra">
+                            <p>
+                                <strong>Zebra</strong><br>
+                                <span>Zebras are known for their distinctive black and white stripes and are social animals found in Africa.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Giraffe" target="_blank">
+                            <img src="assets/img/slider animals/giraffe.avif" alt="Giraffe">
+                            <p>
+                                <strong>Giraffe</strong><br>
+                                <span>Giraffes are the tallest land animals, known for their long necks and unique spotted coats.</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-category="Animals">
+                        <a href="https://en.wikipedia.org/wiki/Rabbit" target="_blank">
+                            <img src="assets/img/slider animals/rabbit.avif" alt="Rabbit">
+                            <p>
+                                <strong>Rabbit</strong><br>
+                                <span>Rabbits are small mammals known for their long ears and are often kept as pets or found in the wild.</span>
+                            </p>
+                        </a>
+                    </div>
+
+
+
+                      
+              </main>
+          <footer id="footer" class="footer dark-background">
+
+            <div class="container footer-top">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                    <span class="sitename">National Parks</span>
+                  </a>
+                  <div class="footer-contact pt-3">
+                    <p>Explore the beauty of national parks, discover <br> diverse wildlife, and plan your next adventure <br> with us.</p>
+                    <a href="mailto:nationalpark531@gmail.com" style="color: white;">nationalpark531@gmail.com</a>
+                  </div>
+                  <div class="social-links d-flex mt-4">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="National-park.html">National Parks</a></li>
+                    <li><a href="wildlife.html">Widllife</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="downloadable.html">Downloadable</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Our Parks</h4>
+                  <ul>
+                    <li><a href="#">Africa</a></li>
+                    <li><a href="#">Asia</a></li>
+                    <li><a href="#">Europe</a></li>
+                    <li><a href="#">North America</a></li>
+                    <li><a href="#">South America</a></li>
+                    <li><a href="#">Oceania</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                  <h4>Our Newsletter</h4>
+                  <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                  
+                  <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form">
+                      <!-- Web3Forms Access Key -->
+                      <input type="hidden" name="access_key" value="d519d4a2-40d5-44f6-8cd5-93fd4abe9b3f">
+              
+                      <div class="newsletter-form">
+                          <input type="email" name="email" placeholder="Enter your email" required>
+                          <input type="submit" value="Subscribe">
+                      </div>
+              
+                      <!-- Success & Error Messages -->
+                      <div class="loading" style="display: none;">Loading...</div>
+                      <div class="error-message" style="display: none;">Something went wrong. Please try again.</div>
+                      <div class="sent-message" style="display: none;">Your subscription request has been sent. Thank you!</div>
+                  </form>
+              </div>
+              
+        
+              </div>
+            </div>
+        
+            <div class="container copyright text-center mt-4">
+                Designed by <a href="index.html">© 2025 National Parks</a> Explorer <a href="index.html">All Rights Reserved 
+              </div>
+            </div>
+        
+          </footer>
+
+          <!-- Scroll Top -->
+            <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Preloader -->
+            <div id="preloader"></div>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

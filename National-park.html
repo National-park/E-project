@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>National Parks</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename">NATIONAL PARKS</h1>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="National-park.html">
+                            Destinantions
+                        </a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="wildlife.html">
+                            Wildlife
+                        </a>
+
+                    </li>
+
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="downloadable.html">Guide</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+            <a class="btn-getstarted" href="about.html">Get Started</a>
+
+        </div>
+    </header>
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section class="sec-1 col-12 col-sm-12">
+            <video autoplay muted loop class="background-video">
+                <source src="assets/img/out of this - world - landscapes in motion.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="container-fluid">
+                <h1 class="heading">DESTINATIONS</h1>
+                <p id="animated-text" class="text-light">
+                    Our national parks host millions of people a year, sustain countless species,<br>
+                    and safeguard some of the most breathtaking landscapes on the planet.<br>
+                    They preserve natural and cultural resources “for the enjoyment, education,<br>
+                    and inspiration of this and future generations.” Here's how to make the most<br>
+                    of your next national parks trip.
+                </p>
+            </div>
+        </section>
+        <section class="sec-2 col-12" >
+            <section class="col-12 mt-5 container" >
+                <div>
+                    <ul
+                        class="list-unstyled d-flex flex-wrap justify-content-center gap-3 gap-md-5 ms-3 ms-md-5 continents-list me-3 me-md-5">
+                        <li>Continents</li>
+                        <li data-country="all">All</li>
+                        <li data-country="asia">Asia</li>
+                        <li data-country="europe">Europe</li>
+                        <li data-country="africa">Africa</li>
+                        <li data-country="north-america">North America</li>
+                        <li data-country="south-america">South America</li>
+                        <li data-country="oceania">Oceania</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="all" class="country-section container">
+
+                <div class="grid-container">
+
+                    <div class="grid-item" data-continent="asia">
+                        <a href="jimcorbet.html">
+                            <img src="/images/parks/jimcorbett.avif" alt="Jim Corbett National Park">
+                            <p>
+                                <strong>Jim Corbett National Park – India</strong><br>
+                                India's oldest national park, famous for Bengal tigers, elephants, and diverse wildlife
+                                in
+                                the Himalayan foothills.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="asia">
+                        <a href="kazinranga.html">
+                            <img src="/images/parks/kaziranga.avif"
+                                alt="Kaziranga National Park">
+                            <p>
+                                <strong>Kaziranga National Park – India</strong><br>
+                                A UNESCO site, home to the world’s largest population of one-horned rhinoceroses, along
+                                with
+                                elephants and tigers.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="asia">
+                        <a href="sundarbans.html">
+                            <img src="/images/parks/sundarbans.avif" alt="Sundarbans National Park">
+                            <p>
+                                <strong>Sundarbans National Park – Bangladesh & India</strong><br>
+                                The largest mangrove forest, known for its Royal Bengal tigers and unique tidal
+                                ecosystem.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="asia">
+                        <a href="bromotengerr.html">
+                            <img src="/images/parks/tengger.avif"
+                                alt="Bromo Tengger Semeru National Park">
+                            <p>
+                                <strong>Bromo Tengger Semeru National Park – Indonesia</strong><br>
+                                Features the iconic Mount Bromo volcano, breathtaking sunrise views, and the ancient
+                                Tenggerese culture.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="asia">
+                        <a href="chitwan.html">
+                            <img src="/images/parks/Chitwan_swamp.avif" alt="Chitwan National Park">
+                            <p>
+                                <strong>Chitwan National Park – Nepal</strong><br>
+                                A diverse jungle habitat with rhinos, tigers, crocodiles, and over 500 bird species,
+                                offering jungle safaris and canoe rides.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="asia">
+                        <a href="fuji.html">
+                            <img src="/images/parks/fuji.avif"
+                                alt="Fuji-Hakone-Izu National Park">
+                            <p>
+                                <strong>Fuji-Hakone-Izu National Park – Japan</strong><br>
+                                A stunning park encompassing Mount Fuji, hot springs, lakes, and coastal islands with
+                                rich
+                                biodiversity.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="europe">
+                        <a href="plitvice.html">
+                            <img src="/images/parks/plitvice.avif"
+                                alt="Plitvice Lakes National Park">
+                            <p>
+                                <strong>Plitvice Lakes National Park – Croatia</strong><br>
+                                Known for its 16 interconnected lakes with cascading waterfalls, crystal-clear waters,
+                                and
+                                lush forests.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="europe">
+                        <a href="saxon.html">
+                            <img src="/images/parks/saxon.avif"
+                                alt="Saxon Switzerland National Park">
+                            <p>
+                                <strong>Saxon Switzerland National Park – Germany</strong><br>
+                                Famous for its dramatic sandstone rock formations, hiking trails, and the Elbe River
+                                valley.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="europe">
+                        <a href="loch.html">
+                            <img src="/images/parks/loch.avif"
+                                alt="Loch Lomond and The Trossachs National Park">
+                            <p>
+                                <strong>Loch Lomond and The Trossachs National Park – Scotland</strong><br>
+                                Features Scotland’s largest freshwater lake, rolling hills, and diverse wildlife like
+                                red
+                                deer.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="europe">
+                        <a href="pyrenees.html">
+                            <img src="/images/parks/pyrenees.avif" alt="Pyrenees National Park">
+                            <p>
+                                <strong>Pyrenees National Park – France</strong><br>
+                                A mountainous paradise with scenic valleys, waterfalls, and rare species like the
+                                Pyrenean
+                                desman.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="europe">
+                        <a href="jotunheimen.html">
+                            <img src="/images/parks/jotunehim.avif" alt="Jotunheimen National Park">
+                            <p>
+                                <strong>Jotunheimen National Park – Norway</strong><br>
+                                Home to Norway’s highest peaks, glaciers, and challenging trekking routes like Besseggen
+                                Ridge.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="africa">
+                        <a href="sengerenti.html">
+                            <img src="/images/parks/serengeti.avif"
+                                alt="Serengeti National Park">
+                            <p>
+                                <strong>Serengeti National Park – Tanzania</strong><br>
+                                Famous for the Great Migration, where millions of wildebeest and zebras travel across
+                                the
+                                savanna.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="africa">
+                        <a href="kruger.html">
+                            <img src="/images/parks/kruger.avif"
+                                alt="Kruger National Park">
+                            <p>
+                                <strong>Kruger National Park – South Africa</strong><br>
+                                One of Africa’s largest game reserves, home to the Big Five and incredible safari
+                                experiences.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="africa">
+                        <a href="masai.html">
+                            <img src="/images/parks/masai.avif" alt="Masai Mara National Reserve">
+                            <p>
+                                <strong>Masai Mara National Reserve – Kenya</strong><br>
+                                A vast savanna teeming with lions, elephants, and the Great Migration of wildebeest.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="africa">
+                        <a href="etosha.html">
+                            <img src="/images/parks/etosha.avif" alt="Etosha National Park">
+                            <p>
+                                <strong>Etosha National Park – Namibia</strong><br>
+                                Features a vast salt pan visible from space and an abundance of wildlife, including
+                                rhinos
+                                and lions.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="africa">
+                        <a href="bwindi.html">
+                            <img src="/images/parks/bwindi.avif"
+                                alt="Bwindi Impenetrable National Park">
+                            <p>
+                                <strong>Bwindi Impenetrable National Park – Uganda</strong><br>
+                                A dense rainforest home to nearly half of the world’s remaining mountain gorillas.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="north-america">
+                        <a href="yellowstone.html">
+                            <img src="/images/parks/yellow stone.avif" alt="Yellowstone National Park">
+                            <p>
+                                <strong>Yellowstone National Park – USA</strong><br>
+                                The world’s first national park, known for geysers like Old Faithful, hot springs, and
+                                abundant wildlife.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="north-america">
+                        <a href="yosemite.html">
+                            <img src="/images/parks/yosemite.avif"
+                                alt="Yosemite National Park">
+                            <p>
+                                <strong>Yosemite National Park – USA</strong><br>
+                                Famous for its towering granite cliffs, waterfalls like Yosemite Falls, and ancient
+                                giant
+                                sequoia trees.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="north-america">
+                        <a href="banff.html">
+                            <img src="/images/parks/banff.avif" alt="Banff National Park">
+                            <p>
+                                <strong>Banff National Park – Canada</strong><br>
+                                A stunning alpine park with turquoise lakes, snow-capped peaks, and a variety of
+                                wildlife,
+                                including grizzlies.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="north-america">
+                        <a href="grandcanyon.html">
+                            <img src="/images/parks/canyon.avif"
+                                alt="Grand Canyon National Park">
+                            <p>
+                                <strong>Grand Canyon National Park – USA</strong><br>
+                                A UNESCO site showcasing a massive canyon carved by the Colorado River over millions of
+                                years.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="north-america">
+                        <a href="greatsmoky.html">
+                            <img src="/images/parks/great somky.avif" alt="Great Smoky Mountains National Park">
+                            <p>
+                                <strong>Great Smoky Mountains National Park – USA</strong><br>
+                                A misty mountain range known for diverse plant and animal species, with historical
+                                Appalachian culture.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="north-america">
+                        <a href="chichenitza.html">
+                            <img src="/images/parks/chichen-itza.avif" alt="Chichen Itza National Park">
+                            <p>
+                                <strong>Chichen Itza National Park – Mexico</strong><br>
+                                Home to the famous Mayan pyramid, El Castillo, and other well-preserved ancient
+                                structures.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="south-america">
+                        <a href="torres.html">
+                            <img src="/images/parks/torres.avif" alt="Torres del Paine National Park">
+                            <p>
+                                <strong>Torres del Paine National Park – Chile</strong><br>
+                                A breathtaking park with granite peaks, glaciers, and vibrant turquoise lakes.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="south-america">
+                        <a href="iguazu.html">
+                            <img src="/images/parks/iguazu.avif" alt="Iguazu National Park">
+                            <p>
+                                <strong>Iguazu National Park – Argentina & Brazil</strong><br>
+                                Home to Iguazu Falls, one of the world’s largest waterfalls, surrounded by lush
+                                rainforest.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="south-america">
+                        <a href="losglaciers.html">
+                            <img src="/images/parks/losglaciers.avif"
+                                alt="Los Glaciares National Park">
+                            <p>
+                                <strong>Los Glaciares National Park – Argentina</strong><br>
+                                Famous for its enormous glaciers, including the spectacular Perito Moreno Glacier.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="south-america">
+                        <a href="manu.html">
+                            <img src="/images/parks/Manu.avif" alt="Manu National Park">
+                            <p>
+                                <strong>Manu National Park – Peru</strong><br>
+                                A biodiversity hotspot in the Amazon Rainforest, home to rare species like jaguars and
+                                giant
+                                otters.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="oceania">
+                        <a href="kakadu.html">
+                            <img src="/images/parks/kakadu.avif" alt="Kakadu National Park">
+                            <p>
+                                <strong>Kakadu National Park – Australia</strong><br>
+                                A diverse landscape with wetlands, Aboriginal rock art, and saltwater crocodiles.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="oceania">
+                        <a href="greatreef.html">
+                            <img src="/images/parks/Great Barrier Reef.avif" alt="Great Barrier Reef Marine Park">
+                            <p>
+                                <strong>Great Barrier Reef Marine Park – Australia</strong><br>
+                                The world’s largest coral reef system, featuring thousands of marine species and vibrant
+                                coral formations.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="oceania">
+                        <a href="fiordland.html">
+                            <img src="/images/parks/fiordland.avif" alt="Fiordland National Park">
+                            <p>
+                                <strong>Fiordland National Park – New Zealand</strong><br>
+                                Known for dramatic fjords, towering waterfalls, and diverse birdlife, including the
+                                endangered kiwi.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="grid-item" data-continent="oceania">
+                        <a href="tongarrio.html">
+                            <img src="/images/parks/tongariro.avif" alt="Tongariro National Park">
+                            <p>
+                                <strong>Tongariro National Park – New Zealand</strong><br>
+                                A UNESCO-listed park with active volcanoes, alpine meadows, and cultural significance to
+                                the
+                                Maori people.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="national-parks-map" class="container-fluid">
+                <h2 class="text-center">🌿 National Parks Interactive Map 🌍</h2>
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+            </section>
+    </main>
+    <footer id="footer" class="footer dark-background">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span class="sitename">National Parks</span>
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>Explore the beauty of national parks, discover <br> diverse wildlife, and plan your next
+                            adventure <br> with us.</p>
+                        <a href="mailto:nationalpark531@gmail.com" style="color: white;">nationalpark531@gmail.com</a>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#hero" class="active">Home</a></li>
+                        <li><a href="National-park.html">National Parks</a></li>
+                        <li><a href="wildlife.html">Widllife</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="downloadable.html">Downloadable</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Our Parks</h4>
+                    <ul>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">North America</a></li>
+                        <li><a href="#">South America</a></li>
+                        <li><a href="#">Oceania</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>Our Newsletter</h4>
+                    <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="d519d4a2-40d5-44f6-8cd5-93fd4abe9b3f">
+
+                        <div class="newsletter-form">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <input type="submit" value="Subscribe">
+                        </div>
+
+                        <!-- Success & Error Messages -->
+                        <div class="loading" style="display: none;">Loading...</div>
+                        <div class="error-message" style="display: none;">Something went wrong. Please try again.</div>
+                        <div class="sent-message" style="display: none;">Your subscription request has been sent. Thank
+                            you!</div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            Designed by <a href="index.html">© 2025 National Parks</a> Explorer <a href="index.html">All Rights Reserved
+        </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
